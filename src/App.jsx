@@ -10,7 +10,7 @@ import Szinek from './Pages/Szinek';
 function App() {
   const router = createBrowserRouter([
     { element: <Layout />, children: [
-      { path: "/", element: <App/> },
+      { path: "/", element: <Szinek/> },
       { path: "/szinek", element: <Szinek /> },
       { path: "/ujszin", element: <Ujszin /> },
       { path: "/nevjegy", element: <Nevjegy /> },
