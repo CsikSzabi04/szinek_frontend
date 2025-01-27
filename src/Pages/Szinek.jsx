@@ -3,8 +3,9 @@ import '../App.css'
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-export default function Szinek({szinek, setSzinek}) {
+export default function Szinek() {
     const [refresh, setRefresh] = useState(false);
+    const [szinek, setSzinek] = useState([]);
 
     useEffect(() => {
         async function getSzinek(){

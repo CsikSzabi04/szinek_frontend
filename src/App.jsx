@@ -8,13 +8,10 @@ import Layout from './Pages/Layout';
 import Szinek from './Pages/Szinek';
 
 function App() {
-  const [szinek, setSzinek] = useState([]);
-
-
   const router = createBrowserRouter([
     { element: <Layout />, children: [
       { path: "/", element: <App/> },
-      { path: "/szinek", element: <Szinek szinek={szinek} setSzinek={setSzinek}/> },
+      { path: "/szinek", element: <Szinek /> },
       { path: "/ujszin", element: <Ujszin /> },
       { path: "/nevjegy", element: <Nevjegy /> },
       { path: "*", element: <Notfound /> }
